@@ -9,6 +9,7 @@ import { useState } from 'react'
  */
 const SocialButton = () => {
   const CONTACT_GITHUB = siteConfig('CONTACT_GITHUB')
+  const CONTACT_GOOGLESCHOLAR = siteConfig('CONTACT_GOOGLESCHOLAR')
   const CONTACT_TWITTER = siteConfig('CONTACT_TWITTER')
   const CONTACT_TELEGRAM = siteConfig('CONTACT_TELEGRAM')
 
@@ -42,6 +43,15 @@ const SocialButton = () => {
             title={'github'}
             href={CONTACT_GITHUB}>
             <i className='transform hover:scale-125 duration-150 fab fa-github dark:hover:text-indigo-400 hover:text-indigo-600' />
+          </a>
+        )}
+        {CONTACT_GOOGLESCHOLAR && (
+          <a
+            target='_blank'
+            rel='noreferrer'
+            title={'googlescholar'}
+            href={CONTACT_GOOGLESCHOLAR}>
+            <i className='transform hover:scale-125 duration-150 fab fa-google-scholar dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
         {CONTACT_TWITTER && (
