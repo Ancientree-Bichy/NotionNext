@@ -12,6 +12,7 @@ const SocialButton = () => {
   const CONTACT_GITHUB = siteConfig('CONTACT_GITHUB')
   const CONTACT_TWITTER = siteConfig('CONTACT_TWITTER')
   const CONTACT_TELEGRAM = siteConfig('CONTACT_TELEGRAM')
+  const CONTACT_GOOGLESCHOLAR = siteConfig('CONTACT_GOOGLESCHOLAR')
 
   const CONTACT_LINKEDIN = siteConfig('CONTACT_LINKEDIN')
   const CONTACT_WEIBO = siteConfig('CONTACT_WEIBO')
@@ -73,6 +74,15 @@ const SocialButton = () => {
             href={CONTACT_LINKEDIN}
             title={'linkIn'}>
             <i className='transform hover:scale-125 duration-150 fab fa-linkedin dark:hover:text-indigo-400 hover:text-indigo-600' />
+          </a>
+        )}
+        {CONTACT_GOOGLESCHOLAR && (
+          <a
+            target='_blank'
+            rel='noreferrer'
+            title={'googlescholar'}
+            href={CONTACT_GOOGLESCHOLAR}>
+            <i className='transform hover:scale-125 duration-150 fab fa-google-scholar dark:hover:text-green-400 hover:text-green-600' />
           </a>
         )}
         {CONTACT_WEIBO && (
